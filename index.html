@@ -1,130 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nata EnergySoul — Энергетические практики</title>
-  <meta name="description" content="Коррекция кармы, работа с родом и реинкарнацией, исцеление эго, восстановление энергоструктуры, прошивка амулетов, баланс чакр и Земля↔Космос. Реальные результаты и отзывы.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Наталия Павливская — Кармокорректор и Целитель | Освобождение души и раскрытие пути</title>
+  <meta name="description" content="Энергетическое исцеление, коррекция кармы, работа с родом и реинкарнацией, восстановление энергоструктуры, программа «Исцеление Эго», прошивка амулетов, баланс чакр и соединение Земля↔Космос. Онлайн и индивидуально." />
+  <meta property="og:title" content="Наталия Павливская — Кармокорректор и Целитель" />
+  <meta property="og:description" content="Диагностика, исцеление, инициации. Реальные кейсы с медподтверждением. Запишитесь на первичную диагностику." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR_DOMAIN" />
+  <meta property="og:image" content="img/cover.jpg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--vio:#6a11cb;--blu:#2575fc;--text:#111;--muted:#666}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);line-height:1.6;background:#fafafa}
-    header{color:#fff;position:relative}
-    nav{position:absolute;top:10px;left:0;right:0;display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
-    nav a{color:#fff;text-decoration:none;font-weight:600}
-    .hero{
-      min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:56px 16px;
-      background:linear-gradient(135deg,rgba(106,17,203,.75),rgba(37,117,252,.75)),
-                 url("img/hero-bg.jpg") center/cover no-repeat;
+    :root{
+      --bg:#0f0f11;--card:#151519;--muted:#9aa0a6;--text:#f6f7fb;
+      --brand:#7dd3a7; /* мягкий зелёный (Анахата) */
+      --accent:#d9b970; /* золотистый акцент */
+      --ring:#2a2f36;
+      --radius:16px;
     }
-    .hero h1{font-size:clamp(28px,5vw,48px);margin:0 0 8px}
-    .hero p{max-width:850px;margin:0 auto 16px}
-    section{padding:50px 16px;max-width:1100px;margin:auto}
-    h2{color:var(--vio);margin-top:0}
-    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
-    .about img{width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
-    @media (max-width:900px){.about{grid-template-columns:1fr}}
-    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:18px}
-    .results .media{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .results img{width:100%;border-radius:12px}
-    .buttons a{display:inline-block;margin:6px 10px 0 0;padding:12px 18px;border-radius:10px;color:#fff;text-decoration:none;font-weight:700}
-    .tg{background:#0088cc}.ig{background:#e1306c}.fb{background:#3b5998}.em{background:#444}
-    footer{background:#111;color:#eee;text-align:center;padding:20px}
-    .muted{color:var(--muted)}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,92%);margin:0 auto}
+    header{position:sticky;top:0;background:rgba(15,15,17,.7);backdrop-filter:blur(8px);border-bottom:1px solid var(--ring);z-index:50}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .logo{font-weight:700;letter-spacing:.3px}
+    .nav a{margin:0 10px;font-weight:600}
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--brand);color:#082016;font-weight:700;box-shadow:0 6px 24px rgba(125,211,167,.25)}
+    .btn.outline{background:transparent;border:1px solid var(--brand);color:var(--text)}
+    .hero{padding:64px 0 24px;background:
+      radial-gradient(60% 60% at 10% 0%,rgba(125,211,167,.18),transparent 60%),
+      radial-gradient(50% 50% at 100% 10%,rgba(217,185,112,.12),transparent 60%)}
+    .hero h1{font-size:clamp(28px,4.5vw,48px);line-height:1.15;margin:10px 0 10px}
+    .hero p{color:var(--muted);max-width:750px}
+    .stack{display:grid;gap:16px}
+    .cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:var(--radius);padding:18px}
+    .card h3{margin:.2rem 0 .4rem}
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#12231b;border:1px solid #1f3a2d;color:#b7f1d2;font-size:.8rem}
+    section{padding:40px 0}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    @media (max-width:900px){.split{grid-template-columns:1fr;}}
+    .grid-6{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .service h4{margin:.2rem 0}
+    .service p{color:var(--muted);font-size:.95rem}
+    /* Слайдер */
+    .slider{position:relative;overflow:hidden;border-radius:var(--radius);border:1px solid var(--ring);background:#101114}
+    .slides{display:flex;transition:transform .5s ease}
+    .slide{min-width:100%;padding:18px}
+    .slider .ctrl{position:absolute;inset:auto 10px 10px auto;display:flex;gap:8px}
+    .ctrl button{background:var(--brand);border:0;border-radius:999px;padding:8px 12px;font-weight:700;color:#082016;cursor:pointer}
+    blockquote{margin:0;padding:14px 16px;background:#12141a;border-left:4px solid var(--brand);border-radius:10px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    footer{padding:26px 0;border-top:1px solid var(--ring);color:var(--muted)}
+    .socials{display:flex;gap:10px;flex-wrap:wrap}
+    .socials a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--ring);background:#111218}
+    .disclaimer{color:#9aa0a6;font-size:.9rem}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Наталия Павливская",
+    "url":"https://YOUR_DOMAIN",
+    "sameAs":["https://instagram.com/YOUR_INSTAGRAM","https://t.me/YOUR_TELEGRAM","https://facebook.com/YOUR_FACEBOOK"]
+  }
+  </script>
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="#about">Обо мне</a>
-    <a href="#services">Услуги</a>
-    <a href="#results">Результаты</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
-  <div class="hero">
-    <div>
-      <h1>Nata EnergySoul</h1>
-      <p>Энергопрактик • Кармокорректор • Целитель</p>
-      <p>Помогаю очищать ментальный и астральный планы, восстанавливать энергоструктуру, прорабатывать кармические узлы и возвращать ясность пути.</p>
-      <div><a class="buttons tg" href="https://t.me/ways_and_life">Написать в Telegram</a></div>
-    </div>
+  <div class="container row">
+    <div class="logo">Nata EnergySoul</div>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#ego">Программа Эго</a>
+      <a href="results.html">Результаты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn" href="https://wa.me/YOUR_PHONE?text=Здравствуйте,%20хочу%20на%20диагностику">WhatsApp</a>
   </div>
 </header>
 
 <main>
-  <!-- ОБО МНЕ -->
-  <section id="about" class="about">
-    <div>
-      <h2>Обо мне</h2>
-      <p>Я — Наталия. Работаю с реинкарнационными программами, личной и родовой кармой, целительскими спектрами. На старте всегда делаю диагностику, затем очищаем и приводим в гармонию мысли (ментальный план) и эмоции (астральный план). Только после этого начинаю глубокую работу и инициации.</p>
-      <p class="muted">Я не обещаю «волшебную таблетку». Волшебная палочка работает, когда человек искренне выбирает перемены и берёт ответственность. Тогда душа перестаёт выть и начинает петь.</p>
+  <section class="hero">
+    <div class="container split">
+      <div>
+        <span class="badge">Кармокорректор • Целитель • Наставник</span>
+        <h1>Освобождение души и&nbsp;раскрытие пути</h1>
+        <p>Помогаю пройти кармические уроки, восстановить энергоструктуру, исцелить родовые/реинкарнационные узлы и вернуться к своей силе. Работаю бережно, системно, результат фиксируем в реальной жизни — и при наличии медицинских документов.</p>
+        <div class="cta" style="margin-top:12px">
+          <a class="btn" href="https://wa.me/YOUR_PHONE?text=Хочу%20на%20первичную%20диагностику">Записаться на диагностику</a>
+          <a class="btn outline" href="results.html">Смотреть результаты</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Что включено в путь</h3>
+        <ul>
+          <li>Диагностика судьбы, рода и реинкарнаций.</li>
+          <li>Гармонизация ментального и эмоционального планов.</li>
+          <li>Глубинные практики исцеления и наполнения.</li>
+          <li>Инициации в программу «Коррекция Кармы».</li>
+        </ul>
+        <p class="disclaimer" style="margin-top:4px">Моя работа — духовная/энергетическая. Это не медицинская услуга и не замена лечению у врача. Результаты индивидуальны.</p>
+      </div>
     </div>
-    <figure>
-      <img src="img/portrait-table.jpg" alt="Наталия Павливская — энергопрактик"/>
-    </figure>
   </section>
 
-  <!-- УСЛУГИ -->
+  <section id="about">
+    <div class="container split">
+      <div>
+        <h2>Обо мне</h2>
+        <p>Я — Наталия, энергопрактик, кармокорректор и целитель. Работаю с реинкарнационными программами, личной кармой и родовой системой (включая обеты, клятвы, запреты и «тяжёлые» наследия). Восстанавливаю энергоструктуру и чакральную систему, балансирую Инь–Ян и потоки стихий, сопровождаю в личностной трансформации.</p>
+        <p>Я не обещаю «волшебную таблетку». Волшебная палочка работает только когда человек искренне хочет изменить свою жизнь и берёт ответственность за свой путь. Когда ум успокаивается и сердце очищается — душа перестаёт выть и начинает петь.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><h3>Фокус</h3><p>Род • Реинкарнации • Личная карма • Финансовая платформа.</p></div>
+        <div class="card"><h3>Целительство</h3><p>Чистка тонких тел, ауры и подключек. Восстановление целостности и жизненного тонуса.</p></div>
+        <div class="card"><h3>Инициации</h3><p>Программа «Коррекция Кармы»: доступ к целительским потокам и инструментам самопомощи.</p></div>
+      </div>
+    </div>
+  </section>
+
   <section id="services">
-    <h2>Услуги</h2>
-    <div class="grid">
-      <div class="card"><b>Диагностика судьбы и кармы</b><br><span class="muted">Родовые сценарии, реинкарнации, личные страхи — находим корень.</span></div>
-      <div class="card"><b>Гармонизация мыслей и эмоций</b><br><span class="muted">Очищение ментального/астрального планов → ясный ум и спокойное сердце.</span></div>
-      <div class="card"><b>Восстановление энергоструктуры</b><br><span class="muted">Чистка ауры, закрытие пробоев, снятие подключек.</span></div>
-      <div class="card"><b>Баланс чакр и соединение Земля↔Космос</b><br><span class="muted">Заземление и активация верхних центров, баланс Инь–Ян и стихий.</span></div>
-      <div class="card"><b>Прошивка амулетов и предметов</b><br><span class="muted">Браслеты, атрибуты, вода — под энергетику конкретного человека, с защитой и программой роста.</span></div>
-      <div class="card"><b>Финансовая платформа</b><br><span class="muted">Снимаем родовые и кармические запреты на ресурс, выстраиваем здоровое отношение к деньгам.</span></div>
+    <div class="container">
+      <h2>Услуги</h2>
+      <div class="grid-6">
+        <div class="card service">
+          <h4>Диагностика судьбы и кармы</h4>
+          <p>Находим корневые узлы: родовые сценарии, реинкарнационные отпечатки, личные запреты и страхи. С этого начинается безопасная трансформация.</p>
+        </div>
+        <div class="card service">
+          <h4>Гармонизация мыслей и эмоций</h4>
+          <p>Очищаем ментальный план (мысли-формы, убеждения) и астральный план (эмоции), чтобы ум стал ясным, а сердце — свободным.</p>
+        </div>
+        <div class="card service">
+          <h4>Восстановление энергоструктуры</h4>
+          <p>Чистка ауры и тонких тел, закрытие пробоев, снятие подключек, сбор «осколков души». Возврат энергии и устойчивости.</p>
+        </div>
+        <div class="card service">
+          <h4>Баланс чакр и Земля↔Космос</h4>
+          <p>Выстраиваем заземление, открываем верхние центры, синхронизируем Инь–Ян и потоки стихий — чтобы жить в потоке, а не в перегрузе.</p>
+        </div>
+        <div class="card service">
+          <h4>Прошивка амулетов и предметов</h4>
+          <p>Личная «прошивка» под энергетику человека: браслеты, украшения, атрибуты, даже вода. Настраивается не только защита, но и <em>программа роста</em>: амулет помогает мягко проходить страхи, а не фиксировать их.</p>
+        </div>
+        <div class="card service">
+          <h4>Финансовая платформа</h4>
+          <p>Снимаем родовые/кармические запреты на деньги, очищаем энергетические долги, выстраиваем здоровое отношение к ресурсу.</p>
+        </div>
+      </div>
+      <div class="cta" style="margin-top:16px">
+        <a class="btn" href="https://wa.me/YOUR_PHONE?text=Хочу%20на%20диагностику">Записаться</a>
+        <a class="btn outline" href="results.html">Посмотреть кейсы</a>
+      </div>
     </div>
   </section>
 
-  <!-- РЕЗУЛЬТАТЫ -->
-  <section id="results" class="results">
-    <h2>Результаты</h2>
+  <section id="ego">
+    <div class="container">
+      <h2>Программа «Исцеление и восстановление Эго»</h2>
+      <p>Эго — это набор реакций, масок и убеждений. Когда оно ранено, мы живём из триггеров: страх, обида, вина, зависимость от оценки. Программа помогает увидеть и исцелить «триггерные зоны», вернуть спокойствие и силу выбора.</p>
 
-    <article class="card">
-      <h3>Онко-динамика (грудь): образование не визуализируется</h3>
-      <p><b>Исходно:</b> рекомендовали удаление молочной железы. Начало работы — февраль 2023.</p>
-      <p><b>Что делали:</b> диагностика личной/родовой кармы, работа с установками и эмоциями, целительские каналы, гармонизация ментального/астрального планов, восстановление энергоструктуры.</p>
-      <div class="media">
-        <img src="img/oncology_before.jpg" alt="КТ 2022 — фрагмент"/>
-        <img src="img/oncology_after.jpg" alt="КТ 2023 — фрагмент"/>
+      <div class="cards" style="margin:12px 0">
+        <div class="card">
+          <h3>Как идёт процесс</h3>
+          <ul>
+            <li><b>Диагностика эгоструктуры</b> — где и почему болит.</li>
+            <li><b>Проработка триггеров</b> — страхи, обесценивание, сравнение, стыд.</li>
+            <li><b>Гармонизация</b> — баланс ума и эмоций, соединение с душой.</li>
+            <li><b>Интеграция</b> — практики для закрепления нового состояния.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Что чувствуют участницы</h3>
+          <p>«Увидела свои маски, где защищаюсь Эго. Было глубоко и больно, но наконец-то я настоящая.»</p>
+          <p>«Проработала страх оценки и стыд — стало проще проявляться в социуме.»</p>
+          <p>«Появилась честность с собой и внутренний покой.»</p>
+        </div>
       </div>
-      <p><b>Результат:</b> по КТ 25.09.2023 — образование <b>не визуализируется</b>, грудь сохранена.</p>
-    </article>
 
-    <article class="card">
-      <h3>Личный опыт Наталии: камни в почках → без конкрементов за месяц</h3>
-      <p><b>Исходно:</b> УЗИ 25.10.2021 — камни до 15 мм, диагноз «мочекаменная болезнь».</p>
-      <p><b>Что я делала:</b> 15 дней энергоцелительства, полная чистка энергоструктуры, работа с родовыми кодами и личной кармой, очистка установок и страхов. Без таблеток и операций.</p>
-      <div class="media">
-        <img src="img/kidney_before.jpg" alt="УЗИ 25.10.2021 — фрагмент"/>
-        <img src="img/kidney_after.jpg" alt="УЗИ 11.2021 — фрагмент"/>
+      <!-- Слайдер отзывов (вставь свои скрины) -->
+      <div class="slider" aria-label="Отзывы участниц">
+        <div class="slides" id="egoSlides">
+          <div class="slide">
+            <blockquote>«Я увидела, где включаю игру своего Эго, чтобы не показывать раны. Раньше не хотела туда смотреть, теперь вижу свою правду.»</blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>«На многие вопросы было тяжело ответить — не хватало честности. Но я смогла. Понимаю, где прячу боль, и как бережно с ней быть.»</blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>«Сильная проработка страха оценки: “а что подумают?”. Стало легче проявляться и не бояться.»</blockquote>
+          </div>
+        </div>
+        <div class="ctrl">
+          <button onclick="prev()">‹</button>
+          <button onclick="next()">›</button>
+        </div>
       </div>
-      <p><b>Результат:</b> через месяц контрольное УЗИ — <b>камней не выявлено</b>. Первый подтверждённый опыт, после которого я начала работать с людьми.</p>
-    </article>
+      <script>
+        let i=0; const track=()=>document.getElementById('egoSlides').style.transform=`translateX(-${i*100}%)`;
+        function next(){ i=(i+1)%3; track() }
+        function prev(){ i=(i+2)%3; track() }
+      </script>
+
+      <div class="cta" style="margin-top:16px">
+        <a class="btn" href="https://wa.me/YOUR_PHONE?text=Хочу%20на%20программу%20Эго">Записаться на «Эго»</a>
+      </div>
+    </div>
   </section>
 
-  <!-- КОНТАКТЫ -->
   <section id="contacts">
-    <h2>Контакты</h2>
-    <p>Прямой канал — Telegram. WhatsApp выдаю индивидуально после заявки.</p>
-    <div class="buttons">
-      <a class="tg" href="https://t.me/ways_and_life">Telegram</a>
-      <a class="ig" href="https://www.instagram.com/nata.energysoul">Instagram</a>
-      <a class="fb" href="https://www.facebook.com/share/1W2MQfgX9i/">Facebook</a>
-      <a class="em" href="mailto:magiaenergysoul@gmail.com">E-mail</a>
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>Выберите удобный способ связи. Напишите пару слов о запросе — я отвечу и предложу первый шаг.</p>
+      <div class="socials">
+        <a href="https://wa.me/YOUR_PHONE?text=Здравствуйте" aria-label="WhatsApp">WhatsApp</a>
+        <a href="https://instagram.com/YOUR_INSTAGRAM" aria-label="Instagram">Instagram</a>
+        <a href="https://t.me/YOUR_TELEGRAM" aria-label="Telegram">Telegram</a>
+        <a href="https://facebook.com/YOUR_FACEBOOK" aria-label="Facebook">Facebook</a>
+        <a class="btn" href="mailto:you@mail.com">Написать на e-mail</a>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <p>© <span id="y"></span> Nata EnergySoul • Информация носит духовно-энергетический характер и не заменяет лечение у врача.</p>
+  <div class="container">
+    <p class="disclaimer">Информация предназначена для духовного/энергетического сопровождения и не заменяет консультацию врача. Результаты индивидуальны и не гарантируются.</p>
+    <p style="margin-top:8px">© <span id="y"></span> Nata EnergySoul</p>
+  </div>
 </footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
+
+
 
 
