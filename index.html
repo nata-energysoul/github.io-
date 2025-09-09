@@ -1,111 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nata EnergySoul — Энергетические практики</title>
-  <meta name="description" content="Энергетические практики: коррекция кармы, работа с родом и реинкарнацией, исцеление эгоструктуры, медитации, создание амулетов.">
+  <meta name="description" content="Коррекция кармы, работа с родом и реинкарнацией, исцеление эго, восстановление энергоструктуры, прошивка амулетов, баланс чакр, соединение Земля↔Космос. Telegram, Instagram, заявка на e-mail."/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fafafa;
-      color: #333;
+    :root{--vio:#6a11cb;--blu:#2575fc;--text:#111;--muted:#666}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);line-height:1.6;background:#fafafa}
+    header{color:#fff;position:relative}
+    .hero{
+      min-height:54vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:56px 16px;
+      background:linear-gradient(135deg,rgba(106,17,203,.75),rgba(37,117,252,.75)),
+                 url("img/hero-bg.jpg") center/cover no-repeat;
     }
-    header {
-      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      margin: 15px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #6a11cb;
-    }
-    .services {
-      background: #f4f4f9;
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-    .contact-buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    .telegram { background: #0088cc; }
-    .instagram { background: #e1306c; }
-    .facebook { background: #3b5998; }
-    .email { background: #444; }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
-    }
+    .hero h1{font-size:clamp(28px,5vw,48px);margin:0 0 8px}
+    .hero p{max-width:850px;margin:0 auto 16px}
+    nav{position:absolute;top:10px;left:0;right:0;display:flex;justify-content:center;gap:18px}
+    nav a{color:#fff;text-decoration:none;font-weight:700}
+    .container{width:min(1100px,92%);margin:0 auto;padding:36px 0}
+    h2{color:var(--vio);margin:0 0 12px}
+    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    .about img{width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+    @media (max-width:900px){.about{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:18px}
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .buttons a{display:inline-block;margin:6px 10px 0 0;padding:12px 18px;border-radius:10px;color:#fff;text-decoration:none;font-weight:700}
+    .tg{background:#0088cc}.ig{background:#e1306c}.fb{background:#3b5998}.em{background:#444}
+    footer{background:#111;color:#eee;text-align:center;padding:20px}
+    .muted{color:var(--muted)}
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Nata EnergySoul</h1>
-    <p>Энергопрактик · Кармокорректор · Целитель</p>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="results.html">Результаты</a>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="results.html">Результаты</a>
+    <a href="#services">Услуги</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <div class="hero">
+    <div>
+      <h1>Nata EnergySoul</h1>
+      <p>Энергопрактик • Кармокорректор • Целитель. Бережно помогаю очистить ментальный и астральный планы, восстановить энергоструктуру, пройти родовые/реинкарнационные узлы и вернуть ясность пути.</p>
+      <div><a class="buttons tg" href="https://t.me/ways_and_life" style="display:inline-block">Написать в Telegram</a></div>
+    </div>
+  </div>
+</header>
 
-  <section>
-    <h2>Обо мне</h2>
-    <p>Я целитель, энергопрактик и проводник. Работаю с личной и родовой кармой, реинкарнационными программами, провожу авторские медитации и инициации. Моя цель — помочь человеку восстановить свою энергоструктуру, гармонизировать мысли и эмоции, освободиться от блоков и выйти на новый уровень осознанности.</p>
+<main class="container">
+  <!-- ОБО МНЕ -->
+  <section class="about">
+    <div>
+      <h2>Обо мне</h2>
+      <p>Я — Наталия. Работаю с реинкарнационными программами, личной и родовой кармой, целительскими спектрами (в т.ч. Рейки). На старте — диагностика, затем очищаем и приводим в гармонию мысли (ментальный план) и эмоции (астральный план). Только после — глубокая работа и инициации.</p>
+      <p class="muted">Я не обещаю «волшебную таблетку». Волшебная палочка работает, когда человек искренне выбирает перемены и берёт ответственность. Тогда душа перестаёт выть — и начинает петь.</p>
+    </div>
+    <figure>
+      <img src="img/portrait-table.jpg" alt="Наталия Павливская — энергопрактик и целитель"/>
+    </figure>
   </section>
 
-  <section class="services">
+  <!-- УСЛУГИ -->
+  <section id="services" class="card">
     <h2>Услуги</h2>
+    <div class="grid">
+      <div class="card"><b>Диагностика судьбы и кармы</b><br><span class="muted">Род, реинкарнации, личные запреты и страхи — находим корень.</span></div>
+      <div class="card"><b>Гармонизация мыслей и эмоций</b><br><span class="muted">Очищение ментального/астрального планов → ясный ум, спокойное сердце.</span></div>
+      <div class="card"><b>Восстановление энергоструктуры</b><br><span class="muted">Аура, тонкие тела, закрытие пробоев, снятие подключек.</span></div>
+      <div class="card"><b>Баланс чакр и Земля↔Космос</b><br><span class="muted">Заземление, активация верхних центров, Инь–Ян и потоки стихий.</span></div>
+      <div class="card"><b>Прошивка амулетов и предметов</b><br><span class="muted">Личная настройка браслетов/вещей/воды под вашу энергетику: защиту ставим правильно и добавляем программу роста — чтобы страхы исцелялись, а не фиксировались.</span></div>
+      <div class="card"><b>Финансовая платформа</b><br><span class="muted">Снимаем родовые/кармические запреты на ресурс, выстраиваем здоровое отношение к деньгам.</span></div>
+    </div>
+    <p style="margin-top:10px"><a href="results.html">Посмотреть реальные кейсы →</a></p>
+  </section>
+
+  <!-- ПРОГРАММА ЭГО -->
+  <section class="card">
+    <h2>Программа «Исцеление и восстановление Эго»</h2>
+    <p>Эго — набор реакций и масок. Когда оно ранено, мы живём из триггеров: страх, вина, стыд, зависимость от оценки. Программа помогает увидеть и исцелить «триггерные зоны», вернуть спокойствие и силу выбора.</p>
     <ul>
-      <li>Коррекция кармы (личная, родовая, реинкарнационная)</li>
-      <li>Исцеление и восстановление Эго</li>
-      <li>Очищение ментального и астрального планов</li>
-      <li>Медитации и инициации</li>
-      <li>Восстановление энергоструктуры и чакральной системы</li>
-      <li>Создание амулетов и прошивка предметов под энергетику человека</li>
-      <li>Соединение Земли и Космоса, баланс Инь–Ян</li>
+      <li><b>Диагностика эгоструктуры</b> — где и почему болит.</li>
+      <li><b>Проработка триггеров</b> — страхи, обесценивание, сравнение.</li>
+      <li><b>Гармонизация</b> — баланс ума и эмоций, соединение с душой.</li>
+      <li><b>Интеграция</b> — практики для закрепления нового состояния.</li>
     </ul>
   </section>
 
-  <section>
+  <!-- КОНТАКТЫ -->
+  <section id="contacts" class="card">
     <h2>Контакты</h2>
-    <div class="contact-buttons">
-      <a href="https://t.me/ways_and_life" class="telegram" target="_blank">Telegram</a>
-      <a href="https://www.instagram.com/nata.energysoul" class="instagram" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/share/1W2MQfgX9i/" class="facebook" target="_blank">Facebook</a>
-      <a href="mailto:magiaenergysoul@gmail.com" class="email">Email</a>
+    <p>Для приватности WhatsApp выдаю индивидуально после заявки. Прямой канал — Telegram.</p>
+    <div class="buttons">
+      <a class="tg" href="https://t.me/ways_and_life">Telegram</a>
+      <a class="ig" href="https://www.instagram.com/nata.energysoul?igsh=MXE2YXF4c2xreHQxZw==">Instagram</a>
+      <a class="fb" href="https://www.facebook.com/share/1W2MQfgX9i/">Facebook</a>
+      <a class="em" href="mailto:magiaenergysoul@gmail.com">E-mail</a>
     </div>
-    <p>WhatsApp доступен по запросу (через форму заявки).</p>
   </section>
+</main>
 
-  <footer>
-    <p>© 2025 Nata EnergySoul. Все права защищены.</p>
-  </footer>
-
+<footer>
+  <p style="margin:0">© <span id="y"></span> Nata EnergySoul • Информация носит духовно-энергетический характер и не заменяет лечение у врача.</p>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
 
