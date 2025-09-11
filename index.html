@@ -275,12 +275,8 @@
 <!-- ===== МОЙ ПОДХОД ===== -->
 <section id="approach" style="position:relative;background:#f9f7f3;padding:70px 16px;overflow:hidden">
   
-  <!-- фон-символ -->
-  <div aria-hidden="true" style="
-    position:absolute;inset:0;
-    background:url('img/sacred-symbol-gold.png') center/600px no-repeat;
-    opacity:.08; z-index:0; pointer-events:none;">
-  </div>
+  <!-- фон-символ с анимацией -->
+  <div class="approach-symbol" aria-hidden="true"></div>
 
   <!-- контент -->
   <div style="max-width:1000px;margin:0 auto;position:relative;z-index:1;text-align:center">
@@ -315,17 +311,24 @@
   </div>
 </section>
 
-    <!-- CTA -->
-    <div style="margin-top:32px">
-      <a href="https://t.me/Nata888energy" style="
-        display:inline-block;padding:14px 26px;border-radius:12px;
-        background:linear-gradient(135deg,#006400,#00a86b);
-        color:#fff;font-weight:800;text-decoration:none;
-        box-shadow:0 6px 18px rgba(0,0,0,0.28)">
-        🔮 Записаться на диагностику
-      </a>
-    </div>
-  </div>
+<!-- ===== СТИЛИ АНИМАЦИИ ===== -->
+<style>
+  .approach-symbol{
+    position:absolute;
+    inset:0;
+    background:url('img/sacred-symbol-gold.png') center/600px no-repeat;
+    opacity:.1;
+    z-index:0;
+    pointer-events:none;
+    animation:breath 6s ease-in-out infinite;
+  }
+  @keyframes breath {
+    0%   { opacity:0.06; transform:scale(1);}
+    50%  { opacity:0.14; transform:scale(1.04);}
+    100% { opacity:0.06; transform:scale(1);}
+  }
+</style>
+
 
   <!-- адаптив -->
   <style>
