@@ -1,5 +1,60 @@
 <!-- ===== ВЕРХНЯЯ ПОЛОСА ===== -->
 <div class="topbar" style="background:#146b63;color:#fff">
+<!-- === ТРИКВЕТР + ОКО — ПЕЧАТЬ В УГЛУ === -->
+<div class="seal" aria-hidden="true">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+    <!-- изумрудный круг -->
+    <circle cx="100" cy="100" r="96" fill="#146b63"/>
+    <!-- тонкое золото по краю -->
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#caa56a" stroke-width="2" opacity="0.9"/>
+
+    <!-- ТРИКВЕТР (три переплетённых лепестка) -->
+    <g fill="none" stroke="#caa56a" stroke-width="4" stroke-linecap="round">
+      <!-- лепесток 1 -->
+      <path d="M100 22
+               C 140 60, 140 140, 100 178
+               C 60 140, 60 60, 100 22Z" opacity="0.95"/>
+      <!-- лепесток 2 (поворот 120°) -->
+      <path d="M22 100
+               C 60 60, 140 60, 178 100
+               C 140 140, 60 140, 22 100Z" opacity="0.95"/>
+      <!-- лепесток 3 (поворот 240°) -->
+      <path d="M50 42
+               C 110 42, 150 110, 100 150
+               C 50 110, 90 42, 50 42Z" opacity="0.95"/>
+    </g>
+
+    <!-- ВСЕВИДЯЩЕЕ ОКО (центр) -->
+    <g stroke="#caa56a" stroke-width="3" fill="none" opacity="0.95">
+      <!-- миндалина глаза -->
+      <path d="M60 100 Q100 70 140 100 Q100 130 60 100Z"/>
+      <!-- радужка -->
+      <circle cx="100" cy="100" r="12" fill="#caa56a"/>
+      <!-- блик -->
+      <circle cx="106" cy="94" r="3" fill="#fff" opacity=".9"/>
+    </g>
+  </svg>
+</div>
+
+<style>
+/* стиль печати в углу */
+.seal{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 110px;         /* размер печати */
+  height: 110px;
+  opacity: .88;         /* общая прозрачность */
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.25));
+  z-index: 1000;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.seal:hover{ transform: scale(1.04); opacity: 1; }
+@media (max-width: 680px){
+  .seal{ width: 84px; height: 84px; right: 10px; bottom: 10px; }
+}
+</style>
+<!-- === /печать === -->
   <div style="max-width:1200px;margin:0 auto;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700">
     <div>Nata EnergySoul</div>
     <a href="#contacts" style="color:#fff;text-decoration:none">Записаться на диагностику</a>
