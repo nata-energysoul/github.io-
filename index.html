@@ -342,8 +342,72 @@
 </section>
 <!-- ===== РЕЗУЛЬТАТЫ ===== -->
 <section id="cases" style="background:#fff;padding:70px 16px">
-  ... твои кейсы тут ...
-</section>
+  <div style="max-width:1100px;margin:0 auto">
+    <h2 style="font-family:'Playfair Display',serif;font-size:2.1rem;margin:0 0 22px;color:#1f2d20">
+      Результаты (кейсы)
+    </h2>
+
+    <div class="cases-grid">
+      <!-- Кейс 1 — онко -->
+      <article class="case-card">
+        <h3 class="case-title">Онкопроцесс: динамика за ~6 месяцев</h3>
+        <p class="case-lead">
+          Глубокая кармокоррекция (личная/родовая/реинкарнационная),
+          вывод очагов, восстановление энергоструктуры. Грудь сохранена.
+        </p>
+        <div class="case-pair">
+          <figure>
+            <img src="img/oncology_before.jpg" data-full="img/oncology_before.jpg" alt="Онко — до">
+            <figcaption>До</figcaption>
+          </figure>
+          <figure>
+            <img src="img/oncology_after.jpg" data-full="img/oncology_after.jpg" alt="Онко — после">
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Кейс 2 — почки -->
+      <article class="case-card">
+        <h3 class="case-title">Камни в почках: результат за 15 дней</h3>
+        <p class="case-lead">
+          Энергоцелительство + работа с первопричиной, без таблеток и операций.
+          Подтверждено УЗИ (до/после).
+        </p>
+        <div class="case-pair">
+          <figure>
+            <img src="img/kidney_before.jpg" data-full="img/kidney_before.jpg" alt="Почки — до">
+            <figcaption>До</figcaption>
+          </figure>
+          <figure>
+            <img src="img/kidney_after.jpg" data-full="img/kidney_after.jpg" alt="Почки — после">
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <style>
+    .cases-grid{
+      display:grid; gap:22px;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    }
+    .case-card{
+      background:#fff; border-radius:16px; padding:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+    .case-title{ margin:0 0 8px; font-size:1.2rem; color:#1f2d20 }
+    .case-lead{ margin:0 0 14px; color:#444; line-height:1.55; font-size:.98rem }
+    .case-pair{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px }
+    .case-pair img{ width:100%; height:210px; object-fit:cover; border-radius:12px }
+    .case-pair figcaption{ text-align:center; font-size:.9rem; color:#666; margin-top:6px }
+    @media (max-width:560px){
+      .case-pair{ grid-template-columns:1fr; }
+      .case-pair img{ height:200px; }
+    }
+  </style>
+
 
 <!-- ===== LIGHTBOX ДЛЯ ФОТО КЕЙСОВ ===== -->
 <style>
