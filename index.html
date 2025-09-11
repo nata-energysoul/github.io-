@@ -1,57 +1,55 @@
+<!-- ===== ВЕРХНЯЯ ПОЛОСА ===== -->
+<div class="topbar" style="background:#146b63;color:#fff">
+  <div style="max-width:1200px;margin:0 auto;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700">
+    <div>Nata EnergySoul</div>
+    <a href="#contacts" style="color:#fff;text-decoration:none">Записаться на диагностику</a>
+  </div>
+</div>
+
 <!-- ===== HERO ===== -->
-<section
-  class="hero"
-  style="
-    min-height: 88vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-   background-image: url("img/nata-hero.jpeg"); /* <-- путь к фото */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    color: #fff;
-  "
->
-  <!-- затемняющий слой для читаемости текста -->
+<section class="hero" style="position:relative;min-height:90vh;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#2b261b">
+  
+  <!-- фон -->
   <div style="
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
-  "></div>
+    position:absolute;inset:0;
+    background:
+      radial-gradient(1000px 340px at 8% 115%, rgba(202,165,106,.22), transparent 60%),
+      radial-gradient(900px 300px at 85% -10%, rgba(202,165,106,.18), transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.58)),
+      url('img/nata-hero.jpeg') center/cover no-repeat;
+    filter:saturate(1.05);
+    z-index:0;">
+  </div>
+
+  <!-- золотой символ -->
+  <div style="
+    position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:url('img/sacred-symbol-gold.png') center/480px no-repeat;
+    opacity:.25;">
+  </div>
 
   <!-- контент -->
-  <div style="position: relative; z-index: 1; max-width: 850px; padding: 24px;">
-    <h1 style="font-size: 42px; margin-bottom: 20px; font-weight: 700; color: #ffd700;">
+  <div style="position:relative;z-index:2;max-width:900px;padding:2rem;background:rgba(255,255,255,0.8);border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,0.15)">
+    <h1 style="font-size:2.5rem;margin-bottom:1rem;color:#1e3d2f;font-family:'Playfair Display',serif">
       Путь по предназначению твоей Души
     </h1>
-    <p style="font-size: 20px; line-height: 1.6; margin-bottom: 30px;">
-      Уже пробовал(а) многое, но снова возвращаешься к тем же сценариям?<br>
+    <p style="font-size:1.25rem;margin-bottom:1.5rem;line-height:1.6;color:#333">
+      Уже пробовал(а) многое, но снова возвращаешься к тем же страхам и старым сценариям?<br>
       Значит, пришло время глубокой трансформации.
     </p>
-    <ul style="text-align: left; display: inline-block; font-size: 18px; line-height: 1.7; margin-bottom: 30px;">
-      <li>Кармокоррекция — работа с личной и родовой кармой, реинкарнационными узлами.</li>
-      <li>Энергетические практики и наставничество.</li>
-      <li>Таро-диагностика и расклады любой сложности.</li>
-      <li>Энергетическая диагностика, восстановление чакр и энергоструктуры.</li>
-      <li>Энергоцелительство — устранение первопричин заболеваний, Рейки-программы.</li>
-      <li>Амулеты и защитные практики для закрепления изменений.</li>
+    <ul style="list-style:none;margin:0 0 1.5rem;padding:0;font-size:1.1rem;line-height:1.7;color:#2b261b">
+      <li>✦ Кармокоррекция — работа с личной и родовой кармой, реинкарнационными узлами.</li>
+      <li>✦ Энергетические практики и наставничество.</li>
+      <li>✦ Таро-диагностика и расклады любой сложности.</li>
+      <li>✦ Энергетическая диагностика, исцеление и восстановление чакр и оболочек энергоструктуры.</li>
+      <li>✦ Энергоцелительство — работа целительскими спектрами, устранение первопричин заболеваний, исцеляющие программы Рейки.</li>
+      <li>✦ Вспомогательные практики и амулеты для поддержания и закрепления изменений.</li>
     </ul>
-    <br>
     <a href="#contacts" style="
-      display: inline-block;
-      padding: 14px 26px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, #006400, #00a86b);
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-      transition: 0.3s;
-    " onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+      display:inline-block;padding:14px 26px;border-radius:12px;
+      background:linear-gradient(135deg,#006400,#00a86b);
+      color:#fff;font-weight:bold;font-size:1.2rem;text-decoration:none;
+      box-shadow:0 4px 14px rgba(0,0,0,0.35);transition:.3s;">
       🔮 Записаться на диагностику
     </a>
   </div>
