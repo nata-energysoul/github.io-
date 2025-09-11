@@ -613,6 +613,45 @@
 }
 </style>
 <!-- ===== /ПЕЧАТЬ ===== -->
+<!-- ===== ПЕЧАТЬ С ТРИКВЕТРОМ И ОКОМ ===== -->
+<div class="footer-seal" aria-hidden="true">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- круг -->
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#caa56a" stroke-width="6"/>
+    
+    <!-- трикветр -->
+    <g fill="none" stroke="#caa56a" stroke-width="6" stroke-linecap="round">
+      <path d="M100 30
+               C 160 100, 40 100, 100 170
+               C 160 100, 160 100, 100 30Z"/>
+      <path d="M30 100
+               C 100 160, 100 40, 170 100
+               C 100 160, 100 160, 30 100Z"/>
+      <path d="M60 40
+               C 140 40, 140 160, 60 160
+               C 140 160, 140 40, 60 40Z"/>
+    </g>
+
+    <!-- всевидящее око -->
+    <ellipse cx="100" cy="100" rx="28" ry="16" stroke="#caa56a" stroke-width="3" fill="none"/>
+    <circle cx="100" cy="100" r="8" fill="#caa56a"/>
+    <circle cx="104" cy="96" r="3" fill="#fff" opacity="0.9"/>
+  </svg>
+</div>
+
+<style>
+  .footer-seal{
+    display:flex;
+    justify-content:center;
+    margin:40px auto 20px;
+    opacity:.9;
+  }
+  .footer-seal svg{
+    width:120px;
+    height:120px;
+    filter:drop-shadow(0 4px 12px rgba(0,0,0,0.35));
+  }
+</style>
 
 </body>
 </html>
