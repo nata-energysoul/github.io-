@@ -340,77 +340,97 @@
     }
   </style>
 </section>
-<!-- ===== РЕЗУЛЬТАТЫ ===== -->
-<section id="cases" style="background:#fff;padding:70px 16px">
-  <div style="max-width:1100px;margin:0 auto">
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,3.8vw,38px);margin:0 0 24px;color:#1e3d2f;text-align:center">
-      Реальные истории исцеления
-    </h2>
-    <p style="max-width:860px;margin:0 auto 50px;color:#444;font-size:clamp(15px,2vw,18px);line-height:1.7;text-align:center">
-      Каждая история уникальна. Здесь — лишь часть того, что удалось пройти и изменить вместе с клиентами (и в моём собственном опыте).
-    </p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Превью — Кейсы</title>
+<style>
+  :root{--emerald:#146b63;--ring:#ece7dd;--ink:#1e1e1e;--muted:#555;--champ:#f9f7f3;--gold:#caa56a}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:var(--ink)}
+  h1,h2,h3{margin:0 0 .6rem}
+  .wrap{max-width:1100px;margin:0 auto;padding:70px 16px}
+  .title{font-family:Georgia, 'Times New Roman', serif;font-size:clamp(26px,3.6vw,38px);color:#1e3d2f;text-align:center}
+  .lead{max-width:860px;margin:0 auto 38px;color:var(--muted);font-size:clamp(15px,2vw,18px);line-height:1.7;text-align:center}
 
-    <div class="cases-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
-      
-      <!-- Кейс 1: Онкология -->
-      <article style="background:#f9f7f3;border-radius:18px;box-shadow:0 16px 38px rgba(60,45,20,.08);overflow:hidden">
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <img src="img/oncology_before.jpg" alt="Онкология: до" style="flex:1 1 48%;object-fit:cover;width:100%;max-height:280px">
-          <img src="img/oncology_after.jpg" alt="Онкология: после" style="flex:1 1 48%;object-fit:cover;width:100%;max-height:280px">
-        </div>
-        <div style="padding:20px">
-          <h3 style="margin:0 0 10px;color:#1e3d2f;font-size:20px">Исцеление от рака груди</h3>
-          <p style="margin:0 0 12px;color:#444;line-height:1.7">
-            Это была одна из самых глубоких и сложных работ. Первоначально врачи настаивали на удалении груди, считая случай безнадёжным.
-            Но мы пошли другим путём: за полгода через кармокоррекцию, чистку родовых и реинкарнационных узлов, выведение кармического груза,
-            а также полное восстановление энергетических тел удалось не просто остановить болезнь — грудь была <strong>сохранена</strong>,
-            а тело и душа — исцелены.
-          </p>
-          <p style="margin:0;color:#146b63;font-weight:600">⏳ Время: около 6 месяцев интенсивной работы</p>
-        </div>
-      </article>
+  /* карточки кейсов */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  @media (max-width: 960px){.grid{grid-template-columns:1fr}}
+  .case{background:var(--champ);border-radius:18px;box-shadow:0 16px 38px rgba(60,45,20,.08);overflow:hidden;border:1px solid var(--ring)}
+  .case .media{display:flex;gap:8px;flex-wrap:wrap}
+  .case .media .ph{flex:1 1 48%;height:280px;display:grid;place-items:center;border-radius:6px;margin:6px;background:linear-gradient(135deg,#f6efe4,#efe6d6)}
+  .case .media .ph span{font-weight:800;color:#7b6a4a;opacity:.8}
+  .case .body{padding:20px}
+  .case h3{color:#1e3d2f;font-size:20px}
+  .meta{margin-top:10px;color:var(--emerald);font-weight:700}
 
-      <!-- Кейс 2: Камни в почках -->
-      <article style="background:#f9f7f3;border-radius:18px;box-shadow:0 16px 38px rgba(60,45,20,.08);overflow:hidden">
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <img src="img/kidney_before.jpg" alt="Почки: до" style="flex:1 1 48%;object-fit:cover;width:100%;max-height:280px">
-          <img src="img/kidney_after.jpg" alt="Почки: после" style="flex:1 1 48%;object-fit:cover;width:100%;max-height:280px">
-        </div>
-        <div style="padding:20px">
-          <h3 style="margin:0 0 10px;color:#1e3d2f;font-size:20px">Камни в почках — мой личный опыт</h3>
-          <p style="margin:0 0 12px;color:#444;line-height:1.7">
-            Эта история — моя собственная. На обучении по анатомии я сдавала анализы, чтобы учиться их читать.
-            Планировала проверить сердце, но случайно выяснилось: анализы указывают на камни в почках.
-            Симптомов не было, и именно этот момент спас меня от будущей боли и операции.
-          </p>
-          <p style="margin:0 0 12px;color:#444;line-height:1.7">
-            Я применила протокол энергоцелительства, работая с первопричиной. Всего 15 дней практики — и камни исчезли.
-            Без таблеток, без хирургии. Этот опыт доказал мне силу методов, которыми я делюсь сегодня.
-          </p>
-          <p style="margin:0;color:#146b63;font-weight:600">⏳ Время: 15 дней энергоцелительства</p>
-        </div>
-      </article>
+  /* блок документов */
+  .docs{margin-top:14px;border-top:1px dashed var(--ring);padding-top:12px}
+  .docs-title{font-weight:800;margin-bottom:10px;color:#1e3d2f}
+  .thumbs{display:flex;gap:10px;flex-wrap:wrap}
+  .thumb{flex:0 0 140px;height:92px;border:1px solid var(--ring);border-radius:10px;display:grid;place-items:center;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+  .thumb span{font-size:12px;color:#6b6b6b}
 
+  .cta{margin-top:32px;text-align:center}
+  .btn{display:inline-block;padding:14px 26px;border-radius:12px;background:linear-gradient(135deg,#006400,#00a86b);color:#fff;font-weight:800;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.28)}
+</style>
+</head>
+<body>
+  <section id="cases">
+    <div class="wrap">
+      <h2 class="title">Реальные истории исцеления</h2>
+      <p class="lead">Каждая история уникальна. Здесь — лишь часть того, что удалось пройти и изменить вместе с клиентами (и в моём собственном опыте).</p>
+
+      <div class="grid">
+        <!-- Кейс 1: Онкология -->
+        <article class="case">
+          <div class="media">
+            <div class="ph"><span>oncology_before.jpg</span></div>
+            <div class="ph"><span>oncology_after.jpg</span></div>
+          </div>
+          <div class="body">
+            <h3>Исцеление от рака груди</h3>
+            <p>Одна из самых глубоких работ. Изначально рекомендовалось удаление груди. За ~6 месяцев через кармокоррекцию, очистку родовых и реинкарнационных узлов, выведение кармического груза и восстановление энергетических тел удалось остановить процесс. <strong>Грудь сохранена</strong>, состояние стабилизировано.</p>
+            <p class="meta">⏳ Время: около 6 месяцев интенсивной работы</p>
+            <div class="docs">
+              <div class="docs-title">Документы и подтверждения</div>
+              <div class="thumbs">
+                <div class="thumb"><span>заключение_01.jpg</span></div>
+                <div class="thumb"><span>УЗИ_до.jpg</span></div>
+                <div class="thumb"><span>УЗИ_после.jpg</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Кейс 2: Почки -->
+        <article class="case">
+          <div class="media">
+            <div class="ph"><span>kidney_before.jpg</span></div>
+            <div class="ph"><span>kidney_after.jpg</span></div>
+          </div>
+          <div class="body">
+            <h3>Камни в почках — мой личный опыт</h3>
+            <p>На обучении по анатомии сдавала анализы, чтобы учиться их читать. Планировала проверять сердце, но результаты указали на камни в почках — симптомов не было. Это вовремя подсветило проблему и уберегло от боли и операции.</p>
+            <p>Как целитель я применила протокол энергоцелительства с фокусом на первопричину. <strong>15 дней практики</strong> — и камни ушли. Без таблеток, без хирургии.</p>
+            <p class="meta">⏳ Время: 15 дней энергоцелительства</p>
+            <div class="docs">
+              <div class="docs-title">Документы и подтверждения</div>
+              <div class="thumbs">
+                <div class="thumb"><span>анализ_мочи.jpg</span></div>
+                <div class="thumb"><span>УЗИ_почек_до.jpg</span></div>
+                <div class="thumb"><span>УЗИ_почек_после.jpg</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="#">🔮 Хочу такой же результат</a>
+      </div>
     </div>
-
-    <!-- CTA -->
-    <div style="text-align:center;margin-top:38px">
-      <a href="https://t.me/Nata888energy" style="
-        display:inline-block;padding:14px 26px;border-radius:12px;
-        background:linear-gradient(135deg,#006400,#00a86b);
-        color:#fff;font-weight:800;text-decoration:none;
-        box-shadow:0 6px 18px rgba(0,0,0,0.28)">
-        🔮 Хочу такой же результат
-      </a>
-    </div>
-  </div>
-
-  <!-- адаптив -->
-  <style>
-    @media (max-width: 960px){
-      #cases .cases-grid{ grid-template-columns:1fr !important }
-    }
-  </style>
-</section>
-
-
+  </section>
+</body>
+</html>
