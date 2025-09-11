@@ -1,18 +1,138 @@
-<section class="hero" style="background: url('img/nata-hero.jpg') center/cover no-repeat;">
-  <div class="overlay">
-    <h1>Путь по предназначению твоей Души</h1>
-    <p>Уже пробовал(а) многое, но снова возвращаешься к тем же сценариям? <br>
-       Значит, пришло время глубокой трансформации.</p>
-    <ul>
-      <li>Кармокоррекция — работа с личной и родовой кармой, реинкарнационными узлами.</li>
-      <li>Энергетические практики и наставничество.</li>
-      <li>Таро-диагностика и расклады любой сложности.</li>
-      <li>Энергетическая диагностика, исцеление и восстановление чакр и энергоструктуры.</li>
-      <li>Энергоцелительство — исцеление первопричин заболеваний, программы Рейки.</li>
-      <li>Амулеты и защитные практики для поддержки трансформаций.</li>
-    </ul>
-    <a href="#contacts" class="btn">🔮 Записаться на диагностику</a>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nata EnergySoul — Путь по предназначению твоей Души</title>
+<meta name="description" content="Кармокоррекция, энергетические практики и наставничество. Таро-диагностика, энергодиагностика, восстановление чакр и энергоструктуры, энергоцелительство (в т.ч. Рейки), амулеты для поддержки трансформаций.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --champ:#f7f2eb;           /* фон шампанского */
+  --paper:#ffffff;
+  --emerald:#146b63;         /* изумрудная шапка */
+  --emerald-dark:#0f4d47;
+  --gold:#caa56a;            /* золото */
+  --gold-deep:#a6854f;
+  --ink:#1c1c1a;
+  --muted:#757a7d;
+  --ring:#ece7dd;
+  --rad:20px;
+  --shadow:0 18px 44px rgba(60,45,20,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  font-family:Manrope,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--ink); background:var(--champ); line-height:1.75;
+}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.2;margin:0 0 .6rem}
+
+/* ВЕРХНЯЯ ПОЛОСА */
+.topbar{background:var(--emerald); color:#fff}
+.topbar .wrap{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;font-weight:700}
+.topbar a{color:#fff;text-decoration:none}
+
+/* HERO */
+.hero{
+  position:relative; overflow:hidden; color:#2b261b;
+  min-height:86vh; display:grid; place-items:center; text-align:left;
+}
+.hero::before{
+  content:""; position:absolute; inset:0;
+  /* слои: золотые блики + полупрозрачное шампанское + фото */
+  background:
+    radial-gradient(1000px 340px at 8% 115%, rgba(202,165,106,.22), transparent 60%),
+    radial-gradient(900px 300px at 85% -10%, rgba(202,165,106,.18), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.58) 100%),
+    url("img/nata-hero.jpg") center/cover no-repeat;
+  filter:saturate(1.02);
+  z-index:0;
+}
+/* золотой символ-«нить» поверх фона */
+.hero::after{
+  content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:
+    url("img/sacred-symbol-gold.png") center/460px no-repeat;
+  opacity:.25;
+}
+
+.hero-inner{position:relative; z-index:2; max-width:1100px; width:100%; padding:48px 16px; display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:center}
+@media (max-width:980px){.hero-inner{grid-template-columns:1fr; text-align:center}}
+
+.kicker{letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--gold-deep);font-size:.8rem;margin-bottom:.25rem}
+.hero h1{font-size:clamp(32px,5vw,64px)}
+.subtitle{font-size:clamp(16px,2.1vw,22px); color:#3c3b38}
+
+.points{margin:18px 0 22px; padding:0; list-style:none; display:grid; gap:10px}
+.points li{background:#fff; border:1px solid var(--ring); border-radius:14px; padding:10px 12px; box-shadow:var(--shadow)}
+
+.btn{
+  display:inline-block; padding:14px 20px; border-radius:999px; font-weight:800; cursor:pointer;
+  background:linear-gradient(135deg,#fff6d9,#f1e3c6); color:#3a2d12; border:1px solid rgba(255,255,255,.7);
+  box-shadow:0 10px 28px rgba(202,165,106,.35); text-decoration:none;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn.alt{background:#fff;color:#7a5a2c;border:1px solid var(--gold)}
+
+.badge{display:inline-block;background:#fff;border:1px solid var(--ring);border-radius:999px;padding:8px 12px;font-weight:700;box-shadow:var(--shadow)}
+.muted{color:var(--muted)}
+
+/* Декоративный трикветр (если загрузишь tri-eye-gold.png) */
+.tri{position:absolute; right:16px; bottom:16px; width:120px; height:120px; opacity:.28; background:url("img/tri-eye-gold.png") center/contain no-repeat; z-index:1; pointer-events:none}
+</style>
+</head>
+<body>
+
+<!-- ИЗУМРУДНАЯ ШАПКА -->
+<div class="topbar">
+  <div class="wrap">
+    <div>Nata EnergySoul</div>
+    <a href="#contacts">Записаться на диагностику</a>
   </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="badge">Кармокоррекция • Энергопрактики • Наставничество</span>
+      <h1>Путь по предназначению твоей Души</h1>
+      <p class="subtitle">Уже пробовал(а) многое, но снова возвращаешься к тем же ситуациям, как будто жизнь идёт по кругу? Пришло время выйти на новый уровень и открыть дверь в своё настоящее «Я».</p>
+
+      <ul class="points">
+        <li><b>Кармокоррекция</b> — личная и родовая карма, реинкарнационные узлы.</li>
+        <li><b>Энергетические практики и наставничество</b> — путь через опыт и осознанность.</li>
+        <li><b>Таро-диагностика</b> — расклады любой сложности для ясных решений.</li>
+        <li><b>Энергодиагностика</b> — исцеление и восстановление чакр и оболочек энергоструктуры.</li>
+        <li><b>Энергоцелительство</b> — работа целительскими спектрами, программы Рейки.</li>
+        <li><b>Амулеты и «прошивки»</b> — персональная поддержка трансформаций.</li>
+      </ul>
+
+      <a href="#contacts" class="btn">🔮 Записаться на диагностику</a>
+    </div>
+
+    <!-- если хочешь портрет рядом — раскомментируй img ниже и добавь файл -->
+    <!-- <figure><img src="img/nata-hero.jpg" alt="Наталия" style="width:100%;border-radius:18px;border:1px solid var(--ring);box-shadow:var(--shadow)"></figure> -->
+  </div>
+
+  <!-- водяной знак-трикветр (появится, если добавишь img/tri-eye-gold.png) -->
+  <div class="tri"></div>
 </section>
+
+<!-- Дальше пойдут блоки «О себе», «Услуги», «Кейсы», «Отзывы», «Контакты» -->
+<section id="contacts" style="max-width:1100px;margin:0 auto;padding:40px 16px">
+  <h2 style="font-family:'Playfair Display',serif">Контакты</h2>
+  <p class="muted">Напишите, и мы мягко начнём путь. WhatsApp выдаю индивидуально.</p>
+  <p>
+    <a class="btn" href="https://t.me/ways_and_life">Telegram</a>
+    <a class="btn alt" href="mailto:magiaenergysoul@gmail.com">magiaenergysoul@gmail.com</a>
+    <a class="btn alt" href="https://www.instagram.com/nata.energysoul">Instagram</a>
+    <a class="btn alt" href="https://www.facebook.com/share/1W2MQfgX9i/">Facebook</a>
+  </p>
+</section>
+
+</body>
+</html>
 
  
