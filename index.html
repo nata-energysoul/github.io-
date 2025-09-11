@@ -341,83 +341,115 @@
   </style>
 </section>
 <!-- ===== РЕЗУЛЬТАТЫ ===== -->
-<section id="cases" style="background:#fff;padding:70px 16px">
+<section id="cases" style="background:#fff;padding:72px 16px">
   <div style="max-width:1100px;margin:0 auto">
-    <h2 style="font-family:'Playfair Display',serif;font-size:2.1rem;margin:0 0 22px;color:#1f2d20">
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,3.2vw,38px);margin:0 0 26px;color:#1f2d20;text-align:center">
       Результаты (кейсы)
     </h2>
 
+    <p style="text-align:center;color:#555;margin:-6px auto 28px;max-width:820px;line-height:1.7">
+      Несколько реальных историй. Нажимай на фото — они откроются в увеличении.
+    </p>
+
+    <!-- сетка карточек -->
     <div class="cases-grid">
+      
       <!-- Кейс 1 — онко -->
-     <article class="case-card">
-  <h3 class="case-title">Онкопроцесс: динамика за ~6 месяцев</h3>
-  <p class="case-lead">
-    Это была сложная работа — причина болезни скрывалась очень глубоко. 
-    Мы полгода прорабатывали карму на всех уровнях, выводили раковые клетки, 
-    убирали очаги, восстанавливали энергоструктуру и физическое тело. 
-    Грудь удалось сохранить.
-  </p>
-  <div class="case-pair">
-    <figure>
-      <img src="img/oncology_before.jpg" data-full="img/oncology_before.jpg" alt="Онко — до">
-      <figcaption>До</figcaption>
-    </figure>
-    <figure>
-      <img src="img/oncology_after.jpg" data-full="img/oncology_after.jpg" alt="Онко — после">
-      <figcaption>После</figcaption>
-    </figure>
-  </div>
-</article>
+      <article class="case-card">
+        <h3 class="case-title">Онкопроцесс: динамика за ~6 месяцев</h3>
+        <p class="case-lead">
+          Сложная, глубокая работа: причина заболевания была очень глубоко.
+          За полгода мы проработали карму на всех уровнях, вывели раковые клетки,
+          убрали очаги и восстановили энергоструктуру и физическое тело.
+          <strong>Грудь удалось сохранить.</strong>
+        </p>
+        <div class="case-pair">
+          <figure>
+            <img src="img/oncology_before.jpg" data-full="img/oncology_before.jpg" alt="Онко — до">
+            <figcaption>До</figcaption>
+          </figure>
+          <figure>
+            <img src="img/oncology_after.jpg" data-full="img/oncology_after.jpg" alt="Онко — после">
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+      </article>
 
       <!-- Кейс 2 — почки -->
-    <article class="case-card">
-  <h3 class="case-title">Камни в почках: результат за 15 дней</h3>
-  <p class="case-lead">
-    Даже я сама когда-то стала для себя клиентом. 
-    На обучении анатомии я сдавала анализы, чтобы научиться их читать. 
-    Врачи увидели намёки на камни в почках, хотя никаких симптомов не было. 
-    Благодаря 15 дням энергоцелительства и работе с первопричиной 
-    удалось обойтись без таблеток и операций. 
-    Боль и риск были сняты ещё до того, как болезнь проявилась.
-  </p>
-  <div class="case-pair">
-    <figure>
-      <img src="img/kidney_before.jpg" data-full="img/kidney_before.jpg" alt="Почки — до">
-      <figcaption>До</figcaption>
-    </figure>
-    <figure>
-      <img src="img/kidney_after.jpg" data-full="img/kidney_after.jpg" alt="Почки — после">
-      <figcaption>После</figcaption>
-    </figure>
-  </div>
-</article>
+      <article class="case-card">
+        <h3 class="case-title">Камни в почках: результат за 15 дней</h3>
+        <p class="case-lead">
+          Даже я сама однажды была своим клиентом. На обучении анатомии, сдавая
+          анализы «ради практики», обнаружила маркеры камней — без симптомов.
+          <strong>15 дней энергоцелительства</strong> с проработкой первопричины —
+          и удалось обойтись без таблеток и операций, предотвратив боль и риск.
+        </p>
+        <div class="case-pair">
+          <figure>
+            <img src="img/kidney_before.jpg" data-full="img/kidney_before.jpg" alt="Почки — до">
+            <figcaption>До</figcaption>
+          </figure>
+          <figure>
+            <img src="img/kidney_after.jpg" data-full="img/kidney_after.jpg" alt="Почки — после">
+            <figcaption>После</figcaption>
+          </figure>
+        </div>
+      </article>
+
     </div>
   </div>
 
+  <!-- локальные стили для карточек -->
   <style>
-    .cases-grid{
-      display:grid; gap:22px;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    #cases .cases-grid{
+      display:grid; gap:24px;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     }
-    .case-card{
-      background:#fff; border-radius:16px; padding:18px;
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
+    #cases .case-card{
+      background:#fff;
+      border:1px solid #ece7dd;
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 16px 38px rgba(60,45,20,.08);
     }
-    .case-title{ margin:0 0 8px; font-size:1.2rem; color:#1f2d20 }
-    .case-lead{ margin:0 0 14px; color:#444; line-height:1.55; font-size:.98rem }
-    .case-pair{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px }
-    .case-pair img{ width:100%; height:210px; object-fit:cover; border-radius:12px }
-    .case-pair figcaption{ text-align:center; font-size:.9rem; color:#666; margin-top:6px }
+    #cases .case-title{
+      margin:0 0 10px;
+      font-size:clamp(18px,2.2vw,22px);
+      color:#1e3d2f;
+      font-weight:700;
+    }
+    #cases .case-lead{
+      margin:0 0 16px;
+      color:#3a3a3a;
+      line-height:1.7;
+      font-size:clamp(14px,2vw,16px);
+    }
+    #cases .case-pair{
+      display:grid; gap:14px;
+      grid-template-columns:1fr 1fr;
+      align-items:start;
+    }
+    #cases .case-pair img{
+      width:100%; height:230px; object-fit:cover;
+      border-radius:12px; border:1px solid #eee;
+      box-shadow:0 10px 26px rgba(0,0,0,.06);
+      background:#fafafa;
+      cursor:zoom-in;
+    }
+    #cases .case-pair figcaption{
+      text-align:center; font-size:.9rem; color:#666; margin-top:6px;
+    }
     @media (max-width:560px){
-      .case-pair{ grid-template-columns:1fr; }
-      .case-pair img{ height:200px; }
+      #cases .case-pair{ grid-template-columns:1fr; }
+      #cases .case-pair img{ height:220px; }
     }
   </style>
+</section>
+<!-- ===== /РЕЗУЛЬТАТЫ ===== -->
 
 
-<!-- ===== LIGHTBOX ДЛЯ ФОТО КЕЙСОВ ===== -->
+<!-- ===== LIGHTBOX (увеличение фото по клику) ===== -->
 <style>
-  /* фон модального окна */
   .lb-backdrop{
     position:fixed; inset:0; z-index:9999;
     background:rgba(0,0,0,.85);
@@ -427,8 +459,8 @@
   .lb-backdrop.show{ display:flex; }
   .lb-content{ position:relative; max-width:92vw; max-height:88vh; }
   .lb-content img{
-    display:block; max-width:92vw; max-height:88vh; width:auto; height:auto; border-radius:10px;
-    box-shadow:0 12px 36px rgba(0,0,0,.5);
+    display:block; max-width:92vw; max-height:88vh; width:auto; height:auto; border-radius:12px;
+    box-shadow:0 12px 36px rgba(0,0,0,.5); background:#111;
   }
   .lb-close{
     position:absolute; top:-14px; right:-14px;
@@ -439,10 +471,6 @@
   .lb-caption{
     color:#fff; text-align:center; margin-top:10px; font-size:14px; opacity:.85;
     max-width:90vw;
-  }
-  #cases img{ cursor:zoom-in; }
-  @media (max-width:640px){
-    .lb-close{ top:-10px; right:-10px; width:34px; height:34px; font-size:18px; }
   }
 </style>
 
