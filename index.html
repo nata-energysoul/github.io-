@@ -20,13 +20,15 @@ h1,h2{font-family:"Playfair Display",serif;margin:0 0 .6rem}
 
 .hero{position:relative;min-height:88vh;display:grid;place-items:center;overflow:hidden}
 .hero::before{
-  content:"";position:absolute;inset:0;
+  content:"";
+  position:absolute; inset:0;
   background:
     radial-gradient(1000px 340px at 8% 115%, rgba(202,165,106,.22), transparent 60%),
     radial-gradient(900px 300px at 85% -10%, rgba(202,165,106,.18), transparent 60%),
     linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.58)),
-    url("img/nata-hero.jpg") center/cover no-repeat; /* ← твоё фото */
+    url("img/nata-hero.jpg.jpeg") center/cover no-repeat; /* ← имя как в репозитории */
   filter:saturate(1.02);
+  z-index:0;
 }
 .hero::after{
   content:"";position:absolute;inset:0;pointer-events:none;opacity:.25;
