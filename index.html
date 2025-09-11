@@ -57,37 +57,104 @@ ul.points li{padding:10px 12px;border:1px solid var(--ring);border-radius:14px}
 
 <!-- первый экран -->
 <section class="hero" id="hero">
-  <div class="hero-inner">
-    <div class="card">
-      <h1>Путь по предназначению твоей Души</h1>
-      <p class="subtitle">
-        Уже пробовал(а) многое, но снова возвращаешься к тем же сценариям? <br>
-        Значит, пришло время глубокой трансформации.
-      </p>
-      <ul class="points">
-        <li><b>Кармокоррекция</b> — личная и родовая карма, реинкарнационные узлы.</li>
-        <li><b>Энергетические практики и наставничество</b>.</li>
-        <li><b>Таро-диагностика</b> и расклады любой сложности.</li>
-        <li><b>Энергодиагностика</b>, исцеление и восстановление чакр и оболочек энергоструктуры.</li>
-        <li><b>Энергоцелительство</b> (в т.ч. Рейки) — работа с первопричинами.</li>
-        <li><b>Амулеты и «прошивки»</b> — поддержка трансформаций.</li>
-      </ul>
-      <a class="btn" href="#contacts">🔮 Записаться на диагностику</a>
-    </div>
+  <div class="hero-content">
+    <h1>Путь по предназначению твоей Души</h1>
+    <p class="subtitle">
+      Уже пробовал(а) многое, но снова возвращаешься к тем же сценариям?<br>
+      Значит, пришло время глубокой трансформации.
+    </p>
+    <ul class="services">
+      <li>Кармокоррекция — работа с личной и родовой кармой, реинкарнационными узлами.</li>
+      <li>Энергетические практики и наставничество.</li>
+      <li>Таро-диагностика и расклады любой сложности.</li>
+      <li>Энергетическая диагностика, исцеление и восстановление чакр и энергоструктуры.</li>
+      <li>Энергоцелительство — устранение первопричин заболеваний, программы Рейки.</li>
+      <li>Амулеты и защитные практики для поддержки трансформаций.</li>
+    </ul>
+    <a href="#contacts" class="cta-button">🔮 Записаться на диагностику</a>
   </div>
 </section>
 
-<!-- контакты (временный блок, потом расширим) -->
-<section id="contacts" class="section">
-  <h2>Контакты</h2>
-  <p class="muted">Напишите — и мы мягко начнём. WhatsApp выдаю индивидуально по запросу.</p>
-  <p>
-    <a class="btn" href="https://t.me/ways_and_life">Telegram</a>
-    <a class="btn" href="mailto:magiaenergysoul@gmail.com">magiaenergysoul@gmail.com</a>
-    <a class="btn" href="https://www.instagram.com/nata.energysoul">Instagram</a>
-    <a class="btn" href="https://www.facebook.com/share/1W2MQfgX9i/">Facebook</a>
-  </p>
-</section>
+<style>
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 3rem;
+  color: #2b261b;
+  overflow: hidden;
+}
 
-</body>
-</html>
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    url("img/nata-hero.jpg") center/cover no-repeat, /* твое фото */
+    radial-gradient(1000px 340px at 8% 115%, rgba(202,165,106,.22), transparent 60%),
+    radial-gradient(900px 300px at 85% -10%, rgba(202,165,106,.18), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.58));
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  z-index: 1;
+  background: rgba(255,255,255,0.75);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e3d2f;
+}
+
+.hero .subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.services {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.services li::before {
+  content: "✦";
+  color: #caa56a;
+  position: absolute;
+  left: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #1e3d2f, #3f7d5f);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #3f7d5f, #1e3d2f);
+  transform: scale(1.05);
+}
+</style>
