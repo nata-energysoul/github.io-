@@ -1,73 +1,79 @@
-<!-- ===== ВЕРХНЯЯ ПОЛОСА ===== -->
-<div class="topbar" style="background:#146b63;color:#fff">
-  <div style="max-width:1200px;margin:0 auto;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700">
-    <div>Nata EnergySoul</div>
-    <!-- Кнопка активна: ведёт в Telegram -->
-    <a href="https://t.me/ways_and_life" style="color:#fff;text-decoration:none">Записаться на диагностику</a>
-  </div>
-</div>
+<!-- ===== HERO (чистый текст на фото) ===== -->
+<section class="hero" id="hero" style="position:relative;min-height:90vh;display:flex;align-items:center;overflow:hidden">
 
-<!-- ===== HERO (СПЛИТ: слева текст, справа фото) ===== -->
-<section class="hero"
-  style="
-    position:relative;overflow:hidden;color:#2b261b;
+  <!-- ФОН: фото + мягкое «шампанское», чтобы слиться с общим фоном -->
+  <div aria-hidden="true" style="
+    position:absolute;inset:0;z-index:0;
     background:
-      radial-gradient(1000px 340px at 8% 115%, rgba(202,165,106,.22), transparent 60%),
-      radial-gradient(900px 300px at 85% -10%, rgba(202,165,106,.18), transparent 60%),
-      linear-gradient(180deg, #fff7ee, #f7f2eb);
-  "
->
-  <!-- золотой символ водяным знаком, НЕ мешает тексту -->
-  <div style="position:absolute;inset:auto 4% 4% auto;width:160px;height:160px;opacity:.22;z-index:0;pointer-events:none;
-              filter:drop-shadow(0 8px 24px rgba(0,0,0,.18));
-              background:url('img/sacred-symbol-gold.png') center/contain no-repeat;"></div>
+      /* нежные золотые блики */
+      radial-gradient(1000px 340px at 8% 115%, rgba(202,165,106,.20), transparent 60%),
+      radial-gradient(900px 300px at 85% -10%, rgba(202,165,106,.16), transparent 60%),
+      /* плавный переход к цвету страницы снизу */
+      linear-gradient(180deg, rgba(247,242,235,.85) 0%, rgba(247,242,235,.55) 40%, rgba(247,242,235,0) 70%),
+      /* само фото */
+      url('img/nata-hero.jpeg') center/cover no-repeat;
+    filter:saturate(1.02);
+  "></div>
 
-  <div style="max-width:1200px;margin:0 auto;padding:42px 16px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;min-height:86vh">
-    <!-- ЛЕВАЯ КОЛОНКА — ЧИТАБЕЛЬНЫЙ ТЕКСТ -->
-    <div style="position:relative;z-index:1">
-      <div style="background:#ffffffcc;border:1px solid #ece7dd;border-radius:18px;box-shadow:0 18px 44px rgba(60,45,20,.12);padding:24px">
-        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(28px,4.2vw,44px);margin:0 0 12px;color:#1e3d2f">
-          Путь по предназначению твоей Души
-        </h1>
-        <p style="font-size:clamp(16px,2vw,20px);line-height:1.6;margin:0 0 16px;color:#333">
-          Уже пробовал(а) многое, но снова возвращаешься к тем же страхам и старым сценариям?<br>
-          Значит, пришло время глубокой трансформации.
-        </p>
-        <ul style="list-style:none;margin:0 0 18px;padding:0;font-size:clamp(15px,1.9vw,18px);line-height:1.75">
-          <li>✦ Кармокоррекция — личная/родовая карма, реинкарнационные узлы.</li>
-          <li>✦ Энергетические практики и наставничество.</li>
-          <li>✦ Таро-диагностика и расклады любой сложности.</li>
-          <li>✦ Энергодиагностика, исцеление и восстановление чакр и оболочек энергоструктуры.</li>
-          <li>✦ Энергоцелительство — работа целительскими спектрами, программы Рейки.</li>
-          <li>✦ Амулеты и «прошивки» для поддержки и закрепления изменений.</li>
-        </ul>
-        <!-- Обе кнопки активны -->
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <a href="https://t.me/ways_and_life"
-             style="display:inline-block;padding:14px 22px;border-radius:12px;background:linear-gradient(135deg,#006400,#00a86b);color:#fff;text-decoration:none;font-weight:800;box-shadow:0 4px 14px rgba(0,0,0,.28)">
-            🔮 Записаться на диагностику
-          </a>
-          <a href="#contacts"
-             style="display:inline-block;padding:14px 22px;border-radius:12px;background:#fff;color:#146b63;text-decoration:none;font-weight:800;border:1px solid #146b63">
-            Связаться
-          </a>
-        </div>
+  <!-- Лёгкая затемняющая вуаль только за текстом, чтобы читалось (без рамок) -->
+  <div aria-hidden="true" style="
+    position:absolute;left:0;right:0;top:0;bottom:0;z-index:1;
+    background:linear-gradient(90deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.20) 35%, rgba(0,0,0,0) 70%);
+    pointer-events:none;
+  "></div>
+
+  <!-- КОНТЕНТ (без карточек/рамок) -->
+  <div style="position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:48px 16px;color:#1f1f1f">
+    <div style="max-width:760px;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.35)">
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);line-height:1.15;margin:0 0 14px">
+        Путь по предназначению твоей Души
+      </h1>
+
+      <p style="font-size:clamp(16px,2.2vw,22px);line-height:1.6;margin:0 0 18px">
+        Уже пробовал(а) многое, но снова возвращаешься к повторяющимся процессам — всё ходишь по кругу? <br>
+        Значит, пришло время глубокой трансформации.
+      </p>
+
+      <p style="font-size:clamp(15px,2vw,19px);line-height:1.75;margin:0 0 10px">
+        Здесь ты найдёшь много способов выйти из замкнутого круга:
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 22px;font-size:clamp(14px,1.9vw,18px);line-height:1.75">
+        <li>— Кармокоррекция: личная и родовая карма, реинкарнационные узлы.</li>
+        <li>— Энергетические практики и наставничество.</li>
+        <li>— Таро-диагностика и расклады любой сложности.</li>
+        <li>— Энергетическая диагностика, исцеление и восстановление чакр и оболочек энергоструктуры.</li>
+        <li>— Энергоцелительство: работа целительскими спектрами, устранение первопричин заболеваний, программы Рейки.</li>
+        <li>— Вспомогательные практики и амулеты для поддержания и закрепления изменений.</li>
+      </ul>
+
+      <!-- КНОПКИ: основная и быстрые контакты -->
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <a href="https://t.me/Nata888energy" style="
+            display:inline-block;padding:14px 22px;border-radius:12px;
+            background:linear-gradient(135deg,#006400,#00a86b);
+            color:#fff;text-decoration:none;font-weight:800;font-size:clamp(14px,1.8vw,18px);
+            box-shadow:0 6px 18px rgba(0,0,0,.28);">
+          🔮 Диагностика (Telegram)
+        </a>
+        <a href="https://wa.me/380977379614" style="
+            display:inline-block;padding:12px 18px;border-radius:12px;background:rgba(255,255,255,.15);
+            color:#fff;text-decoration:none;font-weight:800;backdrop-filter:blur(2px);">
+          WhatsApp
+        </a>
+        <a href="viber://chat?number=%2B380977379614" style="
+            display:inline-block;padding:12px 18px;border-radius:12px;background:rgba(255,255,255,.15);
+            color:#fff;text-decoration:none;font-weight:800;backdrop-filter:blur(2px);">
+          Viber
+        </a>
+        <a href="mailto:magiaenergysoul@gmail.com" style="
+            display:inline-block;padding:12px 18px;border-radius:12px;background:rgba(255,255,255,.15);
+            color:#fff;text-decoration:none;font-weight:800;backdrop-filter:blur(2px);">
+          Email
+        </a>
       </div>
     </div>
-
-    <!-- ПРАВАЯ КОЛОНКА — ТВОЁ ФОТО, ОТДЕЛЬНО ОТ ТЕКСТА -->
-    <figure style="position:relative;z-index:1;margin:0">
-      <img src="img/nata-hero.jpeg" alt="Наталия — Nata EnergySoul"
-           style="width:100%;border-radius:22px;border:1px solid #ece7dd;box-shadow:0 18px 44px rgba(60,45,20,.12);object-fit:cover;max-height:72vh">
-    </figure>
   </div>
 
-  <!-- адаптив: колонки складываются -->
-  <style>
-    @media (max-width: 960px){
-      .hero > div{ grid-template-columns:1fr !important }
-      .hero figure{ order:-1 } /* фото вверх на мобильном */
-    }
-  </style>
 </section>
 <!-- ===== /HERO ===== -->
+
